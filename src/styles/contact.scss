@@ -1,0 +1,75 @@
+@import "animations";
+@import 'static';
+
+#Contact {
+  border-top: 2px solid $color4;
+  min-height: 90vh;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  > section {
+    background-color: #000;
+    width: 100%; /* Set width to 100% to take full width on small screens */
+    height: 100%; /* Set height to 100% to take full height */
+
+    > form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      padding: 2rem; /* Add some padding for better spacing */
+
+      > h2 {
+        text-align: center;
+        font: 100 2.7rem $text2;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        margin: 2rem;
+        color: #ffff;
+      }
+
+      > input,
+      > button {
+        padding: 0.8rem;
+        width: 80%; /* Adjust width for better readability */
+        outline: none;
+        font: 400 0.9rem $text1;
+        margin: 1rem;
+        border: solid 1px #00ffffff;
+      }
+
+      > button {
+        cursor: pointer;
+        background-color: rgb(93, 211, 211);
+        color: $color4;
+        font: 600 1rem $text1;
+        text-transform: uppercase;
+        margin: 1rem 0; /* Adjust margin for better spacing */
+        &:hover {
+          background-color: #6138e8;
+        }
+      }
+    }
+  }
+
+  > aside {
+    width: 100%; /* Set width to 100% to take full width on small screens */
+    background-color: #000;
+    display: grid;
+    place-items: center;
+    padding: 2rem; /* Add some padding for better spacing */
+  }
+
+  @media (max-width: 600px) {
+    grid-template-columns: 1fr; /* Change to a single column layout for small screens */
+    > section {
+      height: auto; /* Remove fixed height for better content flow */
+      padding: 2rem; /* Adjust padding for better spacing */
+    }
+    > aside {
+      padding: 2rem; /* Adjust padding for better spacing */
+    }
+  }
+}

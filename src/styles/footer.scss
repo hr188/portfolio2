@@ -1,0 +1,102 @@
+@import 'static';
+
+/* Default styles for the footer */
+footer {
+  height: 20vh;
+  border-top: 1px solid $color1;
+  background-color: #000;
+  color: $color4;
+  padding: 3rem 0;
+  padding-left: $p_base;
+  display: grid;
+  grid-template-columns: 10fr 3fr 1fr;
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+
+  > div {
+    width: 100%;
+    border-left: 2px solid $color4;
+    border-right: 2px solid $color4;
+    
+    > h2 {
+      margin: 1rem;
+    }
+    
+    > p {
+      font: 400 1.2rem $text2;
+    }
+  }
+
+  > aside > article {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    svg {
+      font-size: 3rem;
+      color: $color4;
+
+      &:hover {
+        
+        color: rgb(125, 20, 20);
+      }
+    }
+  }
+
+  > a {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+
+    svg {
+    
+      font-size: 3rem;
+      color: $color3;
+    
+      
+    }
+  }
+}
+
+/* Responsive styles for phones */
+@media only screen and (max-width: 600px) {
+  footer {
+    padding: $p_sm 0;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+
+    > div {
+      border: none;
+      > h2 {
+        margin: 0.5rem;
+        font-size: 1.5rem;
+      }
+      > p {
+        font-size: 1rem;
+      }
+    }
+
+    > aside {
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+
+      > article {
+        margin-top: 0;
+      }
+    }
+
+    > a {
+      width: 40px;
+      height: 40px;
+
+      svg {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
