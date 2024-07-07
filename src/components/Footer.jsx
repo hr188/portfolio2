@@ -15,20 +15,20 @@ const Footer = () => {
       <div>
         
         <h2>Ayushi Tomar</h2>
-        <p>ayushitomar987@gmail.com</p>
+        <p>ayuhsi.tomar987@gmail.com</p>
       </div>
 
       <aside>
         <h2>Contact</h2>
 
         <article>
-          <a href="https://www.linkedin.com/in/himanshu-ray-60ab02243/" target={"blank"}>
+          <a href="https://www.linkedin.com/in/ayushi-tomar-83523b280/" target={"blank"}>
             <AiFillLinkedin />
           </a>
-          <a href="https://www.instagram.com/hr_liftts/" target={"blank"}>
+          <a href="https://www.instagram.com/_aayushitomar/" target={"blank"}>
             <AiFillInstagram />
           </a>
-          <a href="https://github.com/hr188" target={"blank"}>
+          <a href="https://github.com/ayushiitomar" target={"blank"}>
             <AiFillGithub />
           </a>
         </article>

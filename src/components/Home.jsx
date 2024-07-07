@@ -31,7 +31,7 @@ const Home = () => {
     <div id='home'>
         
         <motion.h1 {...animations.h1} >
-                Hello , I am  Ayushi Tomar
+                Hello , I am Ayushi Tomar
             </motion.h1>
         
         <motion.div {...animations.button}>
